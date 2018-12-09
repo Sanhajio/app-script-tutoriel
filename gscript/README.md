@@ -2,7 +2,7 @@ GScript/Javascript
 =================
 GScript/Javascript sont des languages de programmtion multi-paradigme, i.e qui permet de tout faire comme le Java, et Orienté Objet.
 
-#Concept Généraux aux languages de programmation
+# Concept Généraux aux languages de programmation
 - Instruction: Une action à effectuer, e.g Manipulation de nombres, chaîne de caractères...
 - Variable: un identifiant qui contient de l'information; x = 3. x est un identifiant, 3 est une constante.
 - Condition: une expression mathématique évalué à vrai ou faux (x == 3) qui permet d'effectuer une instruction if (x==3) then x-3
@@ -13,7 +13,7 @@ GScript/Javascript sont des languages de programmtion multi-paradigme, i.e qui p
 
 Dans les languages de programmation, chaque concept est déclaré par un ensemble de mot clé, en javascript/Gscript: "var" permet de déclarer une variable. 
 
-#GScript/Admin directory API
+# GScript/Admin directory API
 Le but étant de lire la documentation officiel de l'API REST présente https://developers.google.com/admin-sdk/directory/v1/reference/ et d'écrire le code gscript correspondant.
 
 Exemple pour gérer les membres d'un groupe:
@@ -25,7 +25,7 @@ Information importante:
 Lister tous les membres d'un groupe:
 https://developers.google.com/admin-sdk/directory/v1/reference/members/list
 
-'''Javascript
+```Javascript
 /* Dans la Documentation:
 HTTP request: GET https://www.googleapis.com/admin/directory/v1/groups/groupKey/members
 Parameter name	Value		Description
@@ -59,12 +59,12 @@ function listAllMembers() {
   response = AdminDirectory.Members.list(groupKey) // On appelle la fonction list de la class AdminDirectory Members, comme dans HTTP request URL. avec le paramètre groupKey.
   Logger.log(response.members) // On navigue dans la reponse comme dans la section response de la documentation. On affiche la réponse dans le journal d'exécution. 
 }
-'''
+```
 
 Autre exemple pour Members Update:
 https://developers.google.com/admin-sdk/directory/v1/reference/members/update
 
-'''Javascript
+```Javascript
 /* Dans la documentation
 Request URL: PUT https://www.googleapis.com/admin/directory/v1/groups/groupKey/members/memberKey
 Parameter name	Value	Description
@@ -104,5 +104,4 @@ function listAllMembers() {
   response = AdminDirectory.Members.update(groupKey, memberKey, requestBody) 
   Logger.log(response) 
 }
-
-'''
+```
