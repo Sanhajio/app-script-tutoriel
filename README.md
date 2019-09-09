@@ -32,3 +32,4 @@ https://codelabs.developers.google.com/
 https://codelabs.developers.google.com/codelabs/cloud-iot-core-overview
 https://gsuite.google.com/products/app-maker/
 https://developers.google.com/apps-script/articles/bracket_maker
+https://www.youtube.com/watch?v=RRQvySxaCW0
